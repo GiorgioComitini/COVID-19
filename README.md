@@ -13,6 +13,7 @@ The "scripts" folder contains:
 
  - "update.sh" downloads and decompresses the data and then calls JSONtoCSV.py. It is a bash script written for Ubuntu Server 18.04 and requires curl, gzip and python3.
  - "JSONtoCSV.py" converts the JSON response into a CSV file. It is a Python3 script and requires the json module.
+ - "cust_time.py" is a Python module for time operations, used by JSONtoCSV.py.
  - "etc" contains two unused headers for HTTP POST requests. They return the data organized by age and by category.
  
  # Disclaimer
