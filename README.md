@@ -5,7 +5,7 @@ This repository collects the Italian COVID-19 vaccination campaign data by regio
 - "raw-json" contains the the data in the JSON format
 - "scripts" contains the scripts I use to extract the data from the website
 
-The data are updated every 2 minutes, being stored in a unique file labeled by the current day until a new file is created at the beginning of the next day. The latest update is stored as "cse-covid19-ita-regioni-latest.csv".
+The data are updated every 2 minutes, being stored in a unique file labeled by the current day until a new file is created at the beginning of the next day. The latest update is stored as "cse-covid19-ita-regioni-latest.csv". The last daily data sets are collected in "cse-covid19-ita-regioni.csv".
 
 ## Scripts
 
