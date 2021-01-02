@@ -36,6 +36,6 @@ def UTCtoCET(time): # Converts UTC to CET
 def localtime(): # Outputs local time
     time_loc=datetime.now()
     time_loc=[str(time_loc.year),str(time_loc.month),str(time_loc.day),str(time_loc.hour),str(time_loc.minute),str(time_loc.second)]
-    for k in range(1,5):
+    for k in range(1,6):
         time_loc[k]='0'*(2-len(time_loc[k]))+time_loc[k]
     return time_loc[0]+'-'+time_loc[1]+'-'+time_loc[2]+'T'+time_loc[3]+':'+time_loc[4]+':'+time_loc[5]
