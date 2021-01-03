@@ -4,7 +4,7 @@
 from matplotlib import pyplot as plt
 
 ###--- Reads from cumulative data ---###
-fin=open("../dati-regioni/cse-covid19-ita-regioni-latest.csv","r")
+fin=open("../dati-regioni/cse-covid19-ita-regioni.csv","r")
 fin.readline()
 data=[]
 for l in fin:
