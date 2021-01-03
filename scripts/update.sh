@@ -35,4 +35,5 @@ printf "\n- Converting data...\n" && \
 # Converts the JSON file cse-covid19-ita-regioni.json into a CSV file cse-covid19-ita-regioni.csv. The former is not removed.
 ./JSONtoCSV.py $FILENAME && \
 cp "../dati-regioni/${FILENAME}.csv" "../dati-regioni/cse-covid19-ita-regioni-latest.csv" && \
+cp "../dati-regioni-per-10k-abitanti/${FILENAME}.csv" "../dati-regioni-per-10k-abitanti/cse-covid19-ita-regioni-latest.csv" && \
 printf "\nAll done.\n\n"
