@@ -13,7 +13,11 @@ for k in range(21):
     regioni[k]+=[popolazione[k]]
 regioni[21]+=[popolazione_it]
 
-fin=open("../raw-json/"+argv[1]+".json","r")
+###--- Demographics ---###
+ages={0:["16-19",2322160],1:["20-29",6157183],2:["30-39",6952720],3:["40-49",9039799],4:["50-59",9501180],5:["60-69",7425175],6:["70-79",6006830],7:["80-89",3647476],8:["90+",794572]}
+
+###--- Data by region ---###
+fin=open("../raw-json-regioni/"+argv[1]+".json","r")
 resp=json.loads(fin.read()) # JSON data as Python dict
 fin.close
 
@@ -34,3 +38,19 @@ for k,el in enumerate(data):
     fout2.write(ctime.UTCtoCET(time)+","+el[0]+","+str(round(el[1]/regioni[k][1]*10000,2))+","+str(round(el[3]/regioni[k][1]*10000,2))+","+ltime+"\n")
 fout.close()
 fout2.close()
+
+###--- Data by age ---###
+fin_eta=open("../raw-json-eta/"+argv[2]+".json","r")
+resp_eta=json.loads(fin_eta.read()) # JSON data as Python dict
+fin_eta.close()
+
+time_eta=resp_eta["results"][0]["result"]["data"]["timestamp"][:-5]
+ltime=ctime.localtime()
+raw_data_eta=resp_eta["results"][0]["result"]["data"]["dsr"]["DS"][0]["PH"][0]["DM0"] # Relevant content in raw (JSON) form
+data_eta=[el["C"] for el in raw_data_eta] # Relevant content as Python list
+
+fout_eta=open("../dati-eta/"+argv[2]+".csv","w") # Writes data as CSV file
+fout_eta.write("data,fascia_eta,dosi_somministrate,dosi_somministrate_per_1k_abitanti,data_ultimo_check\n")
+for k,el in enumerate(data_eta):
+    fout_eta.write(ctime.UTCtoCET(time_eta)+","+el[0]+","+str(el[1])+","+str(round(el[1]/ages[k][1]*1000,2))+","+ltime+"\n")
+fout_eta.close()
