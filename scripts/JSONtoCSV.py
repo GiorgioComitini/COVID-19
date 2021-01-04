@@ -14,7 +14,7 @@ for k in range(21):
 regioni[21]+=[popolazione_it]
 
 ###--- Demographics ---###
-ages={0:["16-19",2322160],1:["20-29",6157183],2:["30-39",6952720],3:["40-49",9039799],4:["50-59",9501180],5:["60-69",7425175],6:["70-79",6006830],7:["80-89",3647476],8:["90+",794572]}
+ages={0:["16-19",2322160],1:["20-29",6157183],2:["30-39",6952720],3:["40-49",9039799],4:["50-59",9501180],5:["60-69",7425175],6:["70-79",6006830],7:["80-89",3647476],8:["90+",794572],9:["16+",51847095]}
 
 ###--- Data by region ---###
 fin=open("../raw-json-regioni/"+argv[1]+".json","r")
@@ -48,6 +48,8 @@ time_eta=resp_eta["results"][0]["result"]["data"]["timestamp"][:-5]
 ltime=ctime.localtime()
 raw_data_eta=resp_eta["results"][0]["result"]["data"]["dsr"]["DS"][0]["PH"][0]["DM0"] # Relevant content in raw (JSON) form
 data_eta=[el["C"] for el in raw_data_eta] # Relevant content as Python list
+vacc_16=sum([el[1] for el in data_eta])
+data_eta+=[["16+",vacc_16]]
 
 fout_eta=open("../dati-eta/"+argv[2]+".csv","w") # Writes data as CSV file
 fout_eta.write("data,fascia_eta,dosi_somministrate,popolazione,dosi_somministrate_per_1k_abitanti,data_ultimo_check\n")
