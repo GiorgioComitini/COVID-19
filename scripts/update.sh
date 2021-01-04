@@ -63,4 +63,6 @@ printf "\n- Converting data...\n" && \
 ./JSONtoCSV.py $FILENAME $FILENAME2 && \
 cp "../dati-regioni/${FILENAME}.csv" "../dati-regioni/cse-covid19-ita-regioni-latest.csv" && \
 cp "../dati-eta/${FILENAME2}.csv" "../dati-eta/cse-covid19-ita-eta-latest.csv" && \
+cp "../raw-json-regioni/${FILENAME}.json" "../raw-json-regioni/cse-covid19-ita-regioni-latest.json" && \
+cp "../raw-json-eta/${FILENAME2}.json" "../raw-json-eta/cse-covid19-ita-eta-latest.json" && \
 printf "\nAll done.\n\n"
