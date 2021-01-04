@@ -10,9 +10,9 @@ This repository collects the Italian COVID-19 vaccination campaign data in machi
 
 The data are updated every 2 minutes, being stored in a unique file labeled by the current day until a new file is created at the beginning of the next day.
 
-The latest update is stored as "cse-covid19-ita-[...]-latest.csv", where [...] is either "regioni" or "eta", in the directories *dati-regioni* and *dati-eta*.
+The latest updates are stored as "cse-covid19-ita-[...]-latest.[csv/json]", where [...] is either "regioni" or "eta", in the directories *dati-regioni*, *dati-eta*, *raw-json-regioni* and *raw-json-eta*.
 
-The last daily data sets are collected in "cse-covid19-ita-[...].csv", where [...] is either "regioni" or "eta". The files get updated every day at 11.59 pm, after the last data have been downloaded.
+All the last daily data sets are collected in "cse-covid19-ita-[...].csv", where [...] is either "regioni" or "eta". The files get updated every day at 11.59 pm, after the last data have been downloaded.
 
 The plots in the graphics directory are updated at 11.59 pm.
 
