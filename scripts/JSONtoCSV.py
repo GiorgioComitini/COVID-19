@@ -50,7 +50,7 @@ raw_data_eta=resp_eta["results"][0]["result"]["data"]["dsr"]["DS"][0]["PH"][0]["
 data_eta=[el["C"] for el in raw_data_eta] # Relevant content as Python list
 
 fout_eta=open("../dati-eta/"+argv[2]+".csv","w") # Writes data as CSV file
-fout_eta.write("data,fascia_eta,dosi_somministrate,dosi_somministrate_per_1k_abitanti,data_ultimo_check\n")
+fout_eta.write("data,fascia_eta,dosi_somministrate,popolazione,dosi_somministrate_per_1k_abitanti,data_ultimo_check\n")
 for k,el in enumerate(data_eta):
-    fout_eta.write(ctime.UTCtoCET(time_eta)+","+el[0]+","+str(el[1])+","+str(round(el[1]/ages[k][1]*1000,2))+","+ltime+"\n")
+    fout_eta.write(ctime.UTCtoCET(time_eta)+","+el[0]+","+str(el[1])+","+str(ages[k][1])+","+str(round(el[1]/ages[k][1]*1000,2))+","+ltime+"\n")
 fout_eta.close()
