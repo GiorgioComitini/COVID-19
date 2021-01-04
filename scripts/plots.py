@@ -28,8 +28,8 @@ x=[data_regioni[0][day][0] for day in range(days)]
 ##-- Region by region plots --##
 for k in range(22):
     for day in range(days):
-        for j in range(1,3):
-            data_regioni[k][day][j]=int(data_regioni[k][day][j])
+        for j in range(1,5):
+            data_regioni[k][day][j]=float(data_regioni[k][day][j])
 #- Dosi somministrate -#
     y=[data_regioni[k][day][1] for day in range(days)]
     plt.figure(figsize=(9.1,5.12),dpi=200)
@@ -40,7 +40,7 @@ for k in range(22):
     plt.savefig("../graphics/somministrate-"+regioni[k][0].lower().replace(" ","_")+".png")
     plt.close()
 #- Percentuale dosi somministrate su consegnate -#
-    y=[data_regioni[k][day][1]/data_regioni[k][day][2]*100 for day in range(days)]
+    y=[data_regioni[k][day][3] for day in range(days)]
     plt.figure(figsize=(9.1,5.12),dpi=200)
     plt.ylim(bottom=0,top=max(y)*1.2)
     plt.plot(x,y,'-o')
@@ -49,7 +49,7 @@ for k in range(22):
     plt.savefig("../graphics/somministrate_su_consegnate-"+regioni[k][0].lower().replace(" ","_")+".png")
     plt.close()
 #- Dosi somministrate per 10k abitanti -#
-    y=[data_regioni[k][day][1]/regioni[k][1]*10000 for day in range(days)]
+    y=[data_regioni[k][day][4] for day in range(days)]
     plt.figure(figsize=(9.1,5.12),dpi=200)
     #plt.ylim(bottom=0,top=12000)
     plt.ylim(bottom=0,top=max(y)*1.2)

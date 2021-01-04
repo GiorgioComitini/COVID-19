@@ -30,14 +30,10 @@ data+=[arr[0:2]+[arr[1]/arr[2]]+[arr[-1]]] # Adds Italy row
 
 
 fout=open("../dati-regioni/"+argv[1]+".csv","w") # Writes data as CSV file
-fout.write("data,denominazione_regione,dosi_somministrate,dosi_consegnate,percentuale_dosi_somministrate_su_consegnate,data_ultimo_check\n")
-fout2=open("../dati-regioni-per-10k-abitanti/"+argv[1]+".csv","w") # Writes data as CSV file
-fout2.write("data,denominazione_regione,dosi_somministrate_per_10k_abitanti,dosi_consegnate_per_10k_abitanti,data_ultimo_check\n")
+fout.write("data,denominazione_regione,dosi_somministrate,dosi_consegnate,percentuale_dosi_somministrate_su_consegnate,dosi_somministrate_per_10k_abitanti,dosi_consegnate_per_10k_abitanti,data_ultimo_check\n")
 for k,el in enumerate(data):
-    fout.write(ctime.UTCtoCET(time)+","+el[0]+","+str(el[1])+","+str(el[3])+","+str(round(float(el[2])*100,2))+","+ltime+"\n")
-    fout2.write(ctime.UTCtoCET(time)+","+el[0]+","+str(round(el[1]/regioni[k][1]*10000,2))+","+str(round(el[3]/regioni[k][1]*10000,2))+","+ltime+"\n")
+    fout.write(ctime.UTCtoCET(time)+","+el[0]+","+str(el[1])+","+str(el[3])+","+str(round(float(el[2])*100,2))+","+str(round(el[1]/regioni[k][1]*10000,2))+","+str(round(el[3]/regioni[k][1]*10000,2))+","+ltime+"\n")
 fout.close()
-fout2.close()
 
 ###--- Data by age ---###
 fin_eta=open("../raw-json-eta/"+argv[2]+".json","r")

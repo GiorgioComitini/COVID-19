@@ -6,4 +6,4 @@
 # if used more than once a day
 
 cat "../dati-regioni/cse-covid19-ita-regioni-$(date +%Y%m%d).csv" | tail -n +2 >> "../dati-regioni/cse-covid19-ita-regioni.csv" && \
-cat "../dati-regioni-per-10k-abitanti/cse-covid19-ita-regioni-$(date +%Y%m%d).csv" | tail -n +2 >> "../dati-regioni-per-10k-abitanti/cse-covid19-ita-regioni.csv"
+cat "../dati-eta/cse-covid19-ita-eta-$(date +%Y%m%d).csv" | tail -n +2 >> "../dati-eta/cse-covid19-ita-eta.csv"
