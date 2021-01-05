@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+from datetime import datetime
 from matplotlib import pyplot as plt
+from matplotlib import dates as mdates
 
 ###--- Reads from cumulative data ---###
 fin=open("../dati-regioni/cse-covid19-ita-regioni.csv","r")
@@ -23,7 +25,9 @@ for k in range(21):
 regioni[21]+=[popolazione_it]
 
 ###--- Plots ---###
-x=[data_regioni[0][day][0] for day in range(days)]
+x=[datetime(2021,int(data_regioni[0][day][0][:2]),int(data_regioni[0][day][0][3:])) for day in range(days)]
+locator=mdates.AutoDateLocator(minticks=1,maxticks=10)
+formatter=mdates.ConciseDateFormatter(locator)
 #y2=[10000 for el in x]
 ##-- Region by region plots --##
 for k in range(22):
@@ -32,9 +36,11 @@ for k in range(22):
             data_regioni[k][day][j]=float(data_regioni[k][day][j])
 #- Dosi somministrate -#
     y=[data_regioni[k][day][1] for day in range(days)]
-    plt.figure(figsize=(9.1,5.12),dpi=200)
-    plt.ylim(bottom=0,top=max(y)*1.2)
-    plt.plot(x,y,'-o')
+    fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
+    ax.set_ylim(bottom=0,top=max(y)*1.2)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(formatter)
+    ax.plot(x,y,'-o')
     plt.grid(True)
     plt.title("Dosi somministrate - "+regioni[k][0])
     plt.savefig("../graphics/somministrate-"+regioni[k][0].lower().replace(" ","_")+".png")
