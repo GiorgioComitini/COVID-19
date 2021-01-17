@@ -25,14 +25,17 @@ time=resp["results"][0]["result"]["data"]["timestamp"][:-5]
 ltime=ctime.localtime()
 raw_data=resp["results"][0]["result"]["data"]["dsr"]["DS"][0]["PH"][0]["DM0"] # Relevant content in raw (JSON) form
 data=[el["C"] for el in raw_data] # Relevant content as Python list
-arr=["Italia",sum([el[1] for el in data]),sum([el[3] for el in data])]
-data+=[arr[0:2]+[arr[1]/arr[2]]+[arr[-1]]] # Adds Italy row
+for k in range(len(data)):
+    if len(data[k])!=6:
+        data[k]=[data[k][0],data[k][1],0,data[k][2],data[k][3],data[k][4]]
+arr=["Italia",sum([el[1] for el in data]),sum([el[2] for el in data]),sum([el[3] for el in data]),sum([el[5] for el in data])]
+data+=[arr[0:4]+[arr[3]/arr[4]]+[arr[4]]] # Adds Italy row
 
 
 fout=open("../dati-regioni/"+argv[1]+".csv","w") # Writes data as CSV file
-fout.write("data,denominazione_regione,dosi_somministrate,dosi_consegnate,percentuale_dosi_somministrate_su_consegnate,dosi_somministrate_per_10k_abitanti,dosi_consegnate_per_10k_abitanti,data_ultimo_check\n")
+fout.write("data,denominazione_regione,dosi_somministrate_prima,dosi_somministrate_seconda,dosi_somministrate_tot,dosi_consegnate,percentuale_dosi_somministrate_tot_su_consegnate,dosi_somministrate_prima_per_10k_abitanti,dosi_somministrate_seconda_per_10k_abitanti,dosi_consegnate_per_10k_abitanti,data_ultimo_check\n")
 for k,el in enumerate(data):
-    fout.write(ctime.UTCtoCET(time)+","+el[0]+","+str(el[1])+","+str(el[3])+","+str(round(float(el[2])*100,2))+","+str(round(el[1]/regioni[k][1]*10000,2))+","+str(round(el[3]/regioni[k][1]*10000,2))+","+ltime+"\n")
+    fout.write(ctime.UTCtoCET(time)+","+el[0]+","+str(el[1])+","+str(el[2])+","+str(el[3])+","+str(el[5])+","+str(round(float(el[3]/el[5])*100,2))+","+str(round(el[1]/regioni[k][1]*10000,2))+","+str(round(el[2]/regioni[k][1]*10000,2))+","+str(round(el[5]/regioni[k][1]*10000,2))+","+ltime+"\n")
 fout.close()
 
 ###--- Data by age ---###
