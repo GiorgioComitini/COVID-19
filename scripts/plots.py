@@ -32,9 +32,9 @@ formatter=mdates.ConciseDateFormatter(locator)
 ##-- Region by region plots --##
 for k in range(22):
     for day in range(days):
-        for j in range(1,5):
+        for j in range(1,8):
             data_regioni[k][day][j]=float(data_regioni[k][day][j])
-#- Dosi somministrate -#
+#- Dosi somministrate - prima -#
     y=[data_regioni[k][day][1] for day in range(days)]
     fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
     ax.set_ylim(bottom=0,top=max(y)*1.2)
@@ -42,11 +42,33 @@ for k in range(22):
     ax.xaxis.set_major_formatter(formatter)
     ax.plot(x,y,'-o')
     plt.grid(True)
-    plt.title("Dosi somministrate - "+regioni[k][0])
+    plt.title("Dosi somministrate (prima dose) - "+regioni[k][0])
+    plt.savefig("../graphics/somministrate_prima-"+regioni[k][0].lower().replace(" ","_")+".png")
+    plt.close()
+#- Dosi somministrate - seconda -#
+    y=[data_regioni[k][day][2] for day in range(days)]
+    fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
+    ax.set_ylim(bottom=0,top=max(y)*1.2)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(formatter)
+    ax.plot(x,y,'-o')
+    plt.grid(True)
+    plt.title("Dosi somministrate (seconda dose) - "+regioni[k][0])
+    plt.savefig("../graphics/somministrate_seconda-"+regioni[k][0].lower().replace(" ","_")+".png")
+    plt.close()
+#- Dosi somministrate - totale -#
+    y=[data_regioni[k][day][3] for day in range(days)]
+    fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
+    ax.set_ylim(bottom=0,top=max(y)*1.2)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(formatter)
+    ax.plot(x,y,'-o')
+    plt.grid(True)
+    plt.title("Dosi somministrate (totale) - "+regioni[k][0])
     plt.savefig("../graphics/somministrate-"+regioni[k][0].lower().replace(" ","_")+".png")
     plt.close()
 #- Percentuale dosi somministrate su consegnate -#
-    y=[data_regioni[k][day][3] for day in range(days)]
+    y=[data_regioni[k][day][5] for day in range(days)]
     fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
     ax.set_ylim(bottom=0,top=max(y)*1.2)
     ax.xaxis.set_major_locator(locator)
@@ -56,8 +78,8 @@ for k in range(22):
     plt.title("Percentuale dosi somministrate su consegnate (%) - "+regioni[k][0])
     plt.savefig("../graphics/somministrate_su_consegnate-"+regioni[k][0].lower().replace(" ","_")+".png")
     plt.close()
-#- Dosi somministrate per 10k abitanti -#
-    y=[data_regioni[k][day][4] for day in range(days)]
+#- Dosi somministrate per 10k abitanti - prima -#
+    y=[data_regioni[k][day][6] for day in range(days)]
     fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
     ax.set_ylim(bottom=0,top=max(y)*1.2)
     ax.xaxis.set_major_locator(locator)
@@ -66,6 +88,19 @@ for k in range(22):
     #ax.plot(x,y,'-o',x,y2,'--')
     ax.plot(x,y,'-o')
     plt.grid(True)
-    plt.title("Dosi somministrate per 10k abitanti - "+regioni[k][0])
-    plt.savefig("../graphics/somministrate_per_10k-"+regioni[k][0].lower().replace(" ","_")+".png")
+    plt.title("Dosi somministrate per 10k abitanti (prima dose) - "+regioni[k][0])
+    plt.savefig("../graphics/somministrate_prima_per_10k-"+regioni[k][0].lower().replace(" ","_")+".png")
+    plt.close()
+#- Dosi somministrate per 10k abitanti -seconda -#
+    y=[data_regioni[k][day][7] for day in range(days)]
+    fig,ax=plt.subplots(figsize=(9.1,5.12),dpi=200)
+    ax.set_ylim(bottom=0,top=max(y)*1.2)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(formatter)
+    #ax.set_ylim(bottom=0,top=12000)
+    #ax.plot(x,y,'-o',x,y2,'--')
+    ax.plot(x,y,'-o')
+    plt.grid(True)
+    plt.title("Dosi somministrate per 10k abitanti (seconda dose) - "+regioni[k][0])
+    plt.savefig("../graphics/somministrate_seconda_per_10k-"+regioni[k][0].lower().replace(" ","_")+".png")
     plt.close()
