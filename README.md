@@ -21,7 +21,8 @@ The plots in the graphics directory are updated at 11.59 pm.
 The "scripts" folder contains:
 
  - "update.sh" downloads the data and then calls *extract.py*. It is a bash script written for Ubuntu Server 18.04 and requires curl and python3.
- - "extract.py" extracts the data into CSV and JSON files. It is a Python3 script and requires the json module.
+ - "extract.py" extracts the data into CSV and JSON files. It is a Python3 script and requires the *json*, *cust_time* and *static* modules (read below for the latter two).
+ - "static.py" is a Python3 module containing the population data, used by *extract.py*.
  - "cust_time.py" is a Python3 module for time operations, used by *extract.py*.
  - "unique.sh" adds the last daily updates to the summary CSV files *cse-covid19-ita-[...].csv*, where [...] is either "regioni" or "eta", in the directories *dati-regioni* and *dati-eta*. This bash script runs at 11.59 pm.
  - "plots.py" generates the plots in the graphics directory. It is a Python3 script, requires the matplotlib module and runs at 11.59 pm.
