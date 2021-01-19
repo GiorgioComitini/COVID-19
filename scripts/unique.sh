@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# This script adds the last daily update to the file cse-covid19-ita-regioni.csv
+# This script adds the last daily update to the files cse-covid19-ita-regioni.csv
+# and cse-covid19-ita-eta.csv
 #
 # WARNING! It adds the data in append mode, so it will result in redundant behavior
 # if used more than once a day
