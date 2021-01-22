@@ -1,102 +1,102 @@
 {
     "16-19": {
         "popolazione": 2322160,
-        "dosi_somministrate_prima": 1585,
+        "dosi_somministrate_prima": 1593,
         "dosi_somministrate_seconda": 2,
-        "dosi_somministrate_tot": 1587,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 0.68,
+        "dosi_somministrate_tot": 1595,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 0.69,
         "dosi_somministrate_seconda_per_1k_abitanti": 0.0,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "20-29": {
         "popolazione": 6157183,
-        "dosi_somministrate_prima": 131190,
-        "dosi_somministrate_seconda": 2199,
-        "dosi_somministrate_tot": 133389,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 21.31,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.36,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 132026,
+        "dosi_somministrate_seconda": 2641,
+        "dosi_somministrate_tot": 134667,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 21.44,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.43,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "30-39": {
         "popolazione": 6952720,
-        "dosi_somministrate_prima": 195640,
-        "dosi_somministrate_seconda": 5105,
-        "dosi_somministrate_tot": 200745,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 28.14,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.73,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 196802,
+        "dosi_somministrate_seconda": 6179,
+        "dosi_somministrate_tot": 202981,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 28.31,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.89,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "40-49": {
         "popolazione": 9039799,
-        "dosi_somministrate_prima": 246425,
-        "dosi_somministrate_seconda": 6604,
-        "dosi_somministrate_tot": 253029,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 27.26,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.73,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 247876,
+        "dosi_somministrate_seconda": 8043,
+        "dosi_somministrate_tot": 255919,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 27.42,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.89,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "50-59": {
         "popolazione": 9501180,
-        "dosi_somministrate_prima": 331079,
-        "dosi_somministrate_seconda": 8779,
-        "dosi_somministrate_tot": 339858,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 34.85,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.92,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 332818,
+        "dosi_somministrate_seconda": 10730,
+        "dosi_somministrate_tot": 343548,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 35.03,
+        "dosi_somministrate_seconda_per_1k_abitanti": 1.13,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "60-69": {
         "popolazione": 7425175,
-        "dosi_somministrate_prima": 201885,
-        "dosi_somministrate_seconda": 5377,
-        "dosi_somministrate_tot": 207262,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 27.19,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.72,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 202814,
+        "dosi_somministrate_seconda": 6513,
+        "dosi_somministrate_tot": 209327,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 27.31,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.88,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "70-79": {
         "popolazione": 6006830,
-        "dosi_somministrate_prima": 44490,
-        "dosi_somministrate_seconda": 492,
-        "dosi_somministrate_tot": 44982,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 7.41,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.08,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 44855,
+        "dosi_somministrate_seconda": 616,
+        "dosi_somministrate_tot": 45471,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 7.47,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.1,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "80-89": {
         "popolazione": 3647476,
-        "dosi_somministrate_prima": 63375,
-        "dosi_somministrate_seconda": 655,
-        "dosi_somministrate_tot": 64030,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 17.38,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.18,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 64012,
+        "dosi_somministrate_seconda": 883,
+        "dosi_somministrate_tot": 64895,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 17.55,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.24,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "90+": {
         "popolazione": 794572,
-        "dosi_somministrate_prima": 48530,
-        "dosi_somministrate_seconda": 529,
-        "dosi_somministrate_tot": 49059,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 61.08,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.67,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 49108,
+        "dosi_somministrate_seconda": 751,
+        "dosi_somministrate_tot": 49859,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 61.8,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.95,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     },
     "16+": {
         "popolazione": 51847095,
-        "dosi_somministrate_prima": 1264199,
-        "dosi_somministrate_seconda": 29742,
-        "dosi_somministrate_tot": 1293941,
-        "data": "2021-01-22T01:45:57",
-        "dosi_somministrate_prima_per_1k_abitanti": 24.38,
-        "dosi_somministrate_seconda_per_1k_abitanti": 0.57,
-        "data_ultimo_check": "2021-01-22T15:18:01"
+        "dosi_somministrate_prima": 1271904,
+        "dosi_somministrate_seconda": 36358,
+        "dosi_somministrate_tot": 1308262,
+        "data": "2021-01-22T13:46:04",
+        "dosi_somministrate_prima_per_1k_abitanti": 24.53,
+        "dosi_somministrate_seconda_per_1k_abitanti": 0.7,
+        "data_ultimo_check": "2021-01-22T15:20:01"
     }
 }
