@@ -26,7 +26,6 @@ The "scripts" folder contains:
  - "cust_time.py" is a Python3 module for time operations, used by *extract.py*.
  - "unique.sh" adds the last daily updates to the summary CSV files *cse-covid19-ita-[...].csv*, where [...] is either "regioni" or "eta", in the directories *dati-regioni* and *dati-eta*. This bash script runs at 11.59 pm.
  - "plots.py" generates the plots in the graphics directory. It is a Python3 script, requires the matplotlib module and runs at 11.59 pm.
- - "etc" contains one unused header for an HTTP POST request. It returns the data organized by category.
  
  # Disclaimer
 
