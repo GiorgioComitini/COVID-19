@@ -11,7 +11,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2791.56,
         "dosi_somministrate_seconda_per_10k_abitanti": 1216.52,
         "dosi_consegnate_per_10k_abitanti": 4582.35,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "BAS": {
         "denominazione_regione": "Basilicata",
@@ -25,7 +25,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2810.46,
         "dosi_somministrate_seconda_per_10k_abitanti": 1092.59,
         "dosi_consegnate_per_10k_abitanti": 4634.03,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "CAL": {
         "denominazione_regione": "Calabria",
@@ -39,7 +39,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2349.73,
         "dosi_somministrate_seconda_per_10k_abitanti": 997.27,
         "dosi_consegnate_per_10k_abitanti": 4197.79,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "CAM": {
         "denominazione_regione": "Campania",
@@ -53,7 +53,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2591.35,
         "dosi_somministrate_seconda_per_10k_abitanti": 971.34,
         "dosi_consegnate_per_10k_abitanti": 4119.91,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "EMR": {
         "denominazione_regione": "Emilia-Romagna",
@@ -67,7 +67,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2763.39,
         "dosi_somministrate_seconda_per_10k_abitanti": 1384.81,
         "dosi_consegnate_per_10k_abitanti": 4719.17,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "FVG": {
         "denominazione_regione": "Friuli-Venezia Giulia",
@@ -81,7 +81,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2638.21,
         "dosi_somministrate_seconda_per_10k_abitanti": 1300.52,
         "dosi_consegnate_per_10k_abitanti": 4718.96,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "LAZ": {
         "denominazione_regione": "Lazio",
@@ -95,7 +95,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2602.99,
         "dosi_somministrate_seconda_per_10k_abitanti": 1179.39,
         "dosi_consegnate_per_10k_abitanti": 4526.3,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "LIG": {
         "denominazione_regione": "Liguria",
@@ -109,7 +109,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2952.95,
         "dosi_somministrate_seconda_per_10k_abitanti": 1558.95,
         "dosi_consegnate_per_10k_abitanti": 4949.04,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "LOM": {
         "denominazione_regione": "Lombardia",
@@ -123,7 +123,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2882.01,
         "dosi_somministrate_seconda_per_10k_abitanti": 1075.48,
         "dosi_consegnate_per_10k_abitanti": 4436.88,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "MAR": {
         "denominazione_regione": "Marche",
@@ -137,7 +137,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2840.38,
         "dosi_somministrate_seconda_per_10k_abitanti": 1306.63,
         "dosi_consegnate_per_10k_abitanti": 4636.33,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "MOL": {
         "denominazione_regione": "Molise",
@@ -151,7 +151,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2842.27,
         "dosi_somministrate_seconda_per_10k_abitanti": 1499.21,
         "dosi_consegnate_per_10k_abitanti": 4959.06,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "PAB": {
         "denominazione_regione": "P.A. Bolzano",
@@ -165,7 +165,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2953.52,
         "dosi_somministrate_seconda_per_10k_abitanti": 1188.5,
         "dosi_consegnate_per_10k_abitanti": 5021.11,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "PAT": {
         "denominazione_regione": "P.A. Trento",
@@ -179,7 +179,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 3073.77,
         "dosi_somministrate_seconda_per_10k_abitanti": 815.73,
         "dosi_consegnate_per_10k_abitanti": 4425.93,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "PIE": {
         "denominazione_regione": "Piemonte",
@@ -193,7 +193,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2769.53,
         "dosi_somministrate_seconda_per_10k_abitanti": 1264.42,
         "dosi_consegnate_per_10k_abitanti": 4714.96,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "PUG": {
         "denominazione_regione": "Puglia",
@@ -207,7 +207,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2773.61,
         "dosi_somministrate_seconda_per_10k_abitanti": 1035.88,
         "dosi_consegnate_per_10k_abitanti": 4302.71,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "SAR": {
         "denominazione_regione": "Sardegna",
@@ -221,7 +221,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2496.48,
         "dosi_somministrate_seconda_per_10k_abitanti": 1047.02,
         "dosi_consegnate_per_10k_abitanti": 4406.33,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "SIC": {
         "denominazione_regione": "Sicilia",
@@ -235,7 +235,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2248.75,
         "dosi_somministrate_seconda_per_10k_abitanti": 1024.63,
         "dosi_consegnate_per_10k_abitanti": 4220.23,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "TOS": {
         "denominazione_regione": "Toscana",
@@ -249,7 +249,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2598.29,
         "dosi_somministrate_seconda_per_10k_abitanti": 1235.27,
         "dosi_consegnate_per_10k_abitanti": 4548.33,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "UMB": {
         "denominazione_regione": "Umbria",
@@ -263,7 +263,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2730.23,
         "dosi_somministrate_seconda_per_10k_abitanti": 1266.96,
         "dosi_consegnate_per_10k_abitanti": 4546.77,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "VDA": {
         "denominazione_regione": "Valle d'Aosta",
@@ -277,7 +277,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2913.28,
         "dosi_somministrate_seconda_per_10k_abitanti": 1195.77,
         "dosi_consegnate_per_10k_abitanti": 4733.83,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "VEN": {
         "denominazione_regione": "Veneto",
@@ -291,7 +291,7 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2847.83,
         "dosi_somministrate_seconda_per_10k_abitanti": 1169.71,
         "dosi_consegnate_per_10k_abitanti": 4466.59,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     },
     "ITA": {
         "denominazione_regione": "Italia",
@@ -305,6 +305,6 @@
         "dosi_somministrate_prima_per_10k_abitanti": 2696.03,
         "dosi_somministrate_seconda_per_10k_abitanti": 1149.38,
         "dosi_consegnate_per_10k_abitanti": 4468.76,
-        "data_ultimo_check": "2021-05-08T15:28:02"
+        "data_ultimo_check": "2021-05-08T15:30:02"
     }
 }
