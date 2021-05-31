@@ -1,5 +1,12 @@
 # Italian COVID-19 vaccination campaign data
 
+## ***TERMINATION NOTICE***
+
+This repository will not be updated any longer starting from 2021-06-03T00:00:00. All the files will continue to be stored until further notice. The data on the italian COVID-19 vaccination campaign can be found in the official government repository (see below).
+ 
+
+## Description
+
 This repository collects the Italian COVID-19 vaccination campaign data in machine-readable form, as extracted from the Government repository https://github.com/italia/covid19-opendata-vaccini. Its contents are structured as follows:
 - "dati-regioni" contains the data by region in the CSV format
 - "dati-eta" contains the data by age in the CSV format
